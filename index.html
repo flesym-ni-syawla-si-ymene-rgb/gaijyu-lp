@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>害獣駆除プロナビ｜最短即日対応の害獣駆除サービス</title>
+  <meta name="description" content="ネズミ・イタチ・ハクビシン・アライグマなどの害獣駆除は害獣駆除プロナビにお任せ。最短即日対応、見積もり無料、再発保証付き。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #333;
+      line-height: 1.8;
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== Utility ===== */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 60px 0; }
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .section-subtitle {
+      text-align: center;
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .highlight { color: #e63946; }
+    .bg-light { background: #f8f9fa; }
+    .bg-green { background: #e8f5e9; }
+
+    /* ===== Fixed CTA Bar (Mobile) ===== */
+    .fixed-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      background: #fff;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
+      padding: 8px;
+      gap: 8px;
+    }
+    .fixed-cta a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 8px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #fff;
+      transition: opacity 0.2s;
+    }
+    .fixed-cta a:hover { opacity: 0.85; }
+    .fixed-cta .cta-phone { background: #e63946; }
+    .fixed-cta .cta-line { background: #06C755; }
+    .fixed-cta svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    @media (min-width: 769px) {
+      .fixed-cta { display: none; }
+      body { padding-bottom: 0; }
+    }
+    @media (max-width: 768px) {
+      body { padding-bottom: 72px; }
+    }
+
+    /* ===== Header ===== */
+    .header {
+      background: #fff;
+      border-bottom: 3px solid #e63946;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 900;
+      color: #1a1a2e;
+    }
+    .logo span { color: #e63946; }
+    .header-cta {
+      display: flex;
+      gap: 10px;
+    }
+    .header-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 13px;
+      color: #fff;
+      transition: opacity 0.2s;
+    }
+    .header-cta a:hover { opacity: 0.85; }
+    .header-cta .btn-phone { background: #e63946; }
+    .header-cta .btn-line { background: #06C755; }
+    .header-cta svg { width: 18px; height: 18px; }
+    @media (max-width: 768px) {
+      .header-cta { display: none; }
+      .logo { font-size: 17px; }
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      padding: 60px 0 50px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(230,57,70,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 24px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+    .hero h1 .accent {
+      color: #ffd166;
+      font-size: 44px;
+    }
+    .hero-desc {
+      font-size: 16px;
+      opacity: 0.9;
+      margin-bottom: 30px;
+      line-height: 1.8;
+    }
+    .hero-points {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .hero-points li {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .hero-points li span { color: #ffd166; font-size: 22px; }
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .hero-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 36px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 17px;
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero-cta a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+    .hero-cta .btn-phone-hero { background: #e63946; box-shadow: 0 4px 14px rgba(230,57,70,0.4); }
+    .hero-cta .btn-line-hero { background: #06C755; box-shadow: 0 4px 14px rgba(6,199,85,0.4); }
+    .hero-cta svg { width: 24px; height: 24px; }
+    .hero-sub { font-size: 13px; opacity: 0.7; margin-top: 16px; }
+
+    @media (max-width: 768px) {
+      .hero { padding: 40px 0 36px; }
+      .hero h1 { font-size: 24px; }
+      .hero h1 .accent { font-size: 30px; }
+      .hero-points li { font-size: 13px; padding: 10px 16px; }
+      .hero-cta a { padding: 14px 24px; font-size: 15px; width: 100%; justify-content: center; }
+    }
+
+    /* ===== Trouble Section ===== */
+    .trouble { background: #fff8f0; }
+    .trouble-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .trouble-card {
+      background: #fff;
+      border: 2px solid #ffe0cc;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .trouble-card:hover { transform: translateY(-3px); }
+    .trouble-icon { font-size: 40px; margin-bottom: 12px; }
+    .trouble-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #e63946; }
+    .trouble-card p { font-size: 14px; color: #666; }
+
+    /* ===== Feature Section ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 24px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      text-align: center;
+      position: relative;
+      border-top: 4px solid #e63946;
+    }
+    .feature-num {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #e63946;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 16px;
+    }
+    .feature-icon { font-size: 48px; margin: 12px 0 16px; }
+    .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+    .feature-card p { font-size: 14px; color: #666; }
+
+    /* ===== Price Section ===== */
+    .price-table {
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    }
+    .price-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .price-table th {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 15px;
+    }
+    .price-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #eee;
+      font-size: 15px;
+    }
+    .price-table tr:last-child td { border-bottom: none; }
+    .price-table tr:nth-child(even) td { background: #f8f9fa; }
+    .price-tag {
+      color: #e63946;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .price-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* ===== Flow Section ===== */
+    .flow-steps {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .flow-step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 32px;
+      position: relative;
+    }
+    .flow-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 27px;
+      top: 56px;
+      bottom: -32px;
+      width: 2px;
+      background: #ddd;
+    }
+    .flow-num {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      background: #e63946;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 20px;
+    }
+    .flow-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .flow-content p { font-size: 14px; color: #666; }
+
+    /* ===== Voice / Testimonials ===== */
+    .voice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .voice-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-left: 4px solid #06C755;
+    }
+    .voice-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .voice-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #e8f5e9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .voice-name { font-weight: 700; font-size: 15px; }
+    .voice-meta { font-size: 12px; color: #999; }
+    .voice-stars { color: #ffd166; margin-bottom: 8px; font-size: 16px; }
+    .voice-text { font-size: 14px; color: #555; }
+
+    /* ===== FAQ ===== */
+    .faq-list {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 18px 20px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: #f8f9fa; }
+    .faq-q::before {
+      content: 'Q';
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      background: #e63946;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 14px;
+    }
+    .faq-q::after {
+      content: '+';
+      margin-left: auto;
+      font-size: 20px;
+      color: #999;
+      transition: transform 0.3s;
+    }
+    .faq-item.active .faq-q::after { content: '−'; }
+    .faq-a {
+      display: none;
+      padding: 0 20px 18px 64px;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.8;
+    }
+    .faq-item.active .faq-a { display: block; }
+
+    /* ===== CTA Section ===== */
+    .cta-section {
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      color: #fff;
+      text-align: center;
+      padding: 60px 0;
+    }
+    .cta-section h2 {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .cta-section p {
+      font-size: 16px;
+      opacity: 0.8;
+      margin-bottom: 32px;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .cta-buttons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 40px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 17px;
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-buttons a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+    .cta-buttons .btn-phone-cta { background: #e63946; }
+    .cta-buttons .btn-line-cta { background: #06C755; }
+    .cta-buttons svg { width: 24px; height: 24px; }
+    @media (max-width: 768px) {
+      .cta-section h2 { font-size: 22px; }
+      .cta-buttons a { width: 100%; justify-content: center; padding: 16px 24px; }
+    }
+
+    /* ===== Company ===== */
+    .company-table {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .company-table table { width: 100%; border-collapse: collapse; }
+    .company-table th,
+    .company-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+      text-align: left;
+    }
+    .company-table th {
+      width: 30%;
+      background: #f8f9fa;
+      font-weight: 700;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background: #1a1a2e;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 24px 0;
+      font-size: 13px;
+    }
+    @media (max-width: 768px) {
+      .footer { padding-bottom: 88px; }
+    }
+
+    /* ===== Responsive adjustments ===== */
+    @media (max-width: 768px) {
+      .section { padding: 40px 0; }
+      .section-title { font-size: 22px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .trouble-grid { grid-template-columns: 1fr; }
+      .voice-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">害獣駆除<span>プロナビ</span></div>
+      <div class="header-cta">
+        <a href="tel:0120-000-000" class="btn-phone">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          0120-000-000
+        </a>
+        <a href="https://line.me/R/" class="btn-line" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
+          LINE相談
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">24時間365日受付中</div>
+      <h1>
+        害獣のお悩み<br>
+        <span class="accent">最短即日</span>で解決します
+      </h1>
+      <p class="hero-desc">
+        ネズミ・イタチ・ハクビシン・アライグマ・コウモリ<br>
+        見積もり無料・追加料金なし・<strong>再発保証最大10年</strong>
+      </p>
+      <ul class="hero-points">
+        <li><span>0</span>円 現地調査</li>
+        <li>最短<span>30</span>分で到着</li>
+        <li>施工実績<span>50,000</span>件超</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="tel:0120-000-000" class="btn-phone-hero">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          0120-000-000
+        </a>
+        <a href="https://line.me/R/" class="btn-line-hero" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
+          LINEで無料相談
+        </a>
+      </div>
+      <p class="hero-sub">※ 通話料無料・年中無休で対応いたします</p>
+    </div>
+  </section>
+
+  <!-- Trouble -->
+  <section class="section trouble">
+    <div class="container">
+      <h2 class="section-title">こんな<span class="highlight">お悩み</span>ありませんか？</h2>
+      <p class="section-subtitle">一つでも当てはまる方は今すぐご相談ください</p>
+      <div class="trouble-grid">
+        <div class="trouble-card">
+          <div class="trouble-icon">🐀</div>
+          <h3>天井裏から物音がする</h3>
+          <p>夜中にドタドタと走り回る音…ネズミやハクビシンが住み着いているかもしれません。</p>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon">💩</div>
+          <h3>フンや尿の臭いがひどい</h3>
+          <p>害獣のフンや尿は悪臭だけでなく、ダニ・ノミの発生や感染症の原因にもなります。</p>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon">🏠</div>
+          <h3>家屋の損傷が気になる</h3>
+          <p>柱や配線をかじられて、漏電や火災のリスクが高まっていませんか？</p>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon">🌾</div>
+          <h3>農作物が荒らされている</h3>
+          <p>イノシシやシカ、アライグマによる農作物被害でお困りの方も対応いたします。</p>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon">😰</div>
+          <h3>自分で対策したが効果なし</h3>
+          <p>市販の対策グッズでは限界があります。プロによる根本的な駆除が必要です。</p>
+        </div>
+        <div class="trouble-card">
+          <div class="trouble-icon">❓</div>
+          <h3>どこに頼めばいいかわからない</h3>
+          <p>悪質な業者もいるため業者選びは重要。私たちが安心の施工をお約束します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">選ばれる<span class="highlight">5つの理由</span></h2>
+      <p class="section-subtitle">害獣駆除プロナビが多くのお客様に選ばれる理由をご紹介</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-num">1</div>
+          <div class="feature-icon">🏆</div>
+          <h3>施工実績50,000件超</h3>
+          <p>年間10,000件以上の施工実績。豊富な経験とノウハウで確実に害獣を駆除します。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">2</div>
+          <div class="feature-icon">⚡</div>
+          <h3>最短30分で現場に到着</h3>
+          <p>全国にスタッフを配置。お電話いただいてから最短30分でお伺いします。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">3</div>
+          <div class="feature-icon">💰</div>
+          <h3>見積もり後の追加料金なし</h3>
+          <p>明朗会計を徹底。お見積もり金額以上のご請求は一切いたしません。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">4</div>
+          <div class="feature-icon">🛡️</div>
+          <h3>最大10年の再発保証</h3>
+          <p>万が一再発した場合は無料で再施工。長期保証で安心をお届けします。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-num">5</div>
+          <div class="feature-icon">📋</div>
+          <h3>自治体届出・各種資格保有</h3>
+          <p>有害鳥獣捕獲許可をはじめ、必要な資格・届出をすべてクリアしています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">わかりやすい<span class="highlight">料金体系</span></h2>
+      <p class="section-subtitle">現地調査・お見積もりは完全無料です</p>
+      <div class="price-table">
+        <table>
+          <thead>
+            <tr>
+              <th>害獣の種類</th>
+              <th>料金目安（税込）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ネズミ駆除</td>
+              <td><span class="price-tag">14,300円〜</span></td>
+            </tr>
+            <tr>
+              <td>イタチ駆除</td>
+              <td><span class="price-tag">24,200円〜</span></td>
+            </tr>
+            <tr>
+              <td>ハクビシン駆除</td>
+              <td><span class="price-tag">24,200円〜</span></td>
+            </tr>
+            <tr>
+              <td>アライグマ駆除</td>
+              <td><span class="price-tag">27,500円〜</span></td>
+            </tr>
+            <tr>
+              <td>コウモリ駆除</td>
+              <td><span class="price-tag">19,800円〜</span></td>
+            </tr>
+            <tr>
+              <td>その他害獣</td>
+              <td><span class="price-tag">お見積もり</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note">※ 被害状況や建物の構造により料金は変動します。まずは無料調査をご利用ください。</p>
+    </div>
+  </section>
+
+  <!-- Flow -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">ご依頼の<span class="highlight">流れ</span></h2>
+      <p class="section-subtitle">お問い合わせから施工完了まで最短即日で対応</p>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <div class="flow-content">
+            <h3>お問い合わせ</h3>
+            <p>お電話またはLINEでお気軽にご連絡ください。24時間365日受付中です。</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">2</div>
+          <div class="flow-content">
+            <h3>無料現地調査</h3>
+            <p>経験豊富なスタッフが現地を調査。被害状況を正確に把握します。</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <div class="flow-content">
+            <h3>お見積もり提出</h3>
+            <p>調査結果に基づき、最適な駆除プランとお見積もりをご提出。追加料金は一切なし。</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">4</div>
+          <div class="flow-content">
+            <h3>駆除施工</h3>
+            <p>捕獲・追い出し・侵入口封鎖・消毒清掃まで一貫して対応します。</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">5</div>
+          <div class="flow-content">
+            <h3>アフターフォロー</h3>
+            <p>施工後も安心の最大10年保証。再発時は無料で再施工いたします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">お客様の<span class="highlight">声</span></h2>
+      <p class="section-subtitle">実際にご利用いただいたお客様からの評価</p>
+      <div class="voice-grid">
+        <div class="voice-card">
+          <div class="voice-header">
+            <div class="voice-avatar">👩</div>
+            <div>
+              <div class="voice-name">T.S 様</div>
+              <div class="voice-meta">東京都 / ネズミ駆除</div>
+            </div>
+          </div>
+          <div class="voice-stars">★★★★★</div>
+          <p class="voice-text">天井裏のネズミに悩んでいましたが、電話した翌日に来てくれてすぐに解決。対応も丁寧で、見積もり通りの金額で安心できました。</p>
+        </div>
+        <div class="voice-card">
+          <div class="voice-header">
+            <div class="voice-avatar">👨</div>
+            <div>
+              <div class="voice-name">K.M 様</div>
+              <div class="voice-meta">大阪府 / ハクビシン駆除</div>
+            </div>
+          </div>
+          <div class="voice-stars">★★★★★</div>
+          <p class="voice-text">屋根裏にハクビシンが住み着いていて困っていました。侵入口の封鎖までしっかりやってくれて、半年以上経ちますが再発なし。保証もあるので安心です。</p>
+        </div>
+        <div class="voice-card">
+          <div class="voice-header">
+            <div class="voice-avatar">👩</div>
+            <div>
+              <div class="voice-name">A.Y 様</div>
+              <div class="voice-meta">愛知県 / イタチ駆除</div>
+            </div>
+          </div>
+          <div class="voice-stars">★★★★☆</div>
+          <p class="voice-text">他社より見積もりが安かったのと、説明が丁寧だったのが決め手でした。施工も手際よく、1日で完了。臭いもなくなりました。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">よくある<span class="highlight">ご質問</span></h2>
+      <p class="section-subtitle">お客様からよくいただくご質問にお答えします</p>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">見積もりは本当に無料ですか？</div>
+          <div class="faq-a">はい、現地調査・お見積もりは完全無料です。お見積もり後にキャンセルされた場合も一切費用はかかりません。お気軽にお問い合わせください。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">どのくらいの時間で来てもらえますか？</div>
+          <div class="faq-a">お住まいのエリアや状況によりますが、最短30分〜1時間程度でお伺いできます。お急ぎの場合はお電話でお伝えください。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">施工中、家にいなくても大丈夫ですか？</div>
+          <div class="faq-a">基本的には立ち会いをお願いしておりますが、難しい場合はご相談に応じます。施工前後の写真撮影や動画記録も行っておりますのでご安心ください。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">ペットがいても施工できますか？</div>
+          <div class="faq-a">はい、ペットに配慮した安全な方法で施工いたします。使用する薬剤についても事前にご説明いたしますので、ご安心ください。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">再発した場合はどうなりますか？</div>
+          <div class="faq-a">最大10年の再発保証をお付けしております。保証期間内に再発した場合は、無料で再施工いたします。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>害獣の被害は<span style="color:#ffd166">放置するほど悪化</span>します</h2>
+      <p>まずは無料調査でプロに相談。お見積もりだけでもお気軽にどうぞ。</p>
+      <div class="cta-buttons">
+        <a href="tel:0120-000-000" class="btn-phone-cta">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          0120-000-000
+        </a>
+        <a href="https://line.me/R/" class="btn-line-cta" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
+          LINEで無料相談
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">運営会社<span class="highlight">情報</span></h2>
+      <div class="company-table">
+        <table>
+          <tr><th>会社名</th><td>株式会社プロナビ（架空）</td></tr>
+          <tr><th>所在地</th><td>東京都渋谷区神宮前1-1-1</td></tr>
+          <tr><th>設立</th><td>2015年4月</td></tr>
+          <tr><th>代表</th><td>山田 太郎</td></tr>
+          <tr><th>事業内容</th><td>害獣駆除・害虫駆除・消毒清掃</td></tr>
+          <tr><th>電話番号</th><td>0120-000-000</td></tr>
+          <tr><th>対応エリア</th><td>全国（一部離島を除く）</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 害獣駆除プロナビ All Rights Reserved.（※これは架空のLPです）</p>
+    </div>
+  </footer>
+
+  <!-- Fixed CTA Bar (Mobile) -->
+  <div class="fixed-cta">
+    <a href="tel:0120-000-000" class="cta-phone">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+      電話で相談
+    </a>
+    <a href="https://line.me/R/" class="cta-line" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
+      LINE相談
+    </a>
+  </div>
+
+</body>
+</html>
