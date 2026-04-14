@@ -3,44 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>害獣駆除プロナビ｜最短即日対応の害獣駆除サービス</title>
-  <meta name="description" content="ネズミ・イタチ・ハクビシン・アライグマなどの害獣駆除は害獣駆除プロナビにお任せ。最短即日対応、見積もり無料、再発保証付き。">
+  <title>害獣駆除の費用相場はいくら？知らないと26万円も大損するかも！害獣駆除業者5社比較で紹介</title>
+  <meta name="description" content="実際に害獣駆除を依頼した筆者が5社に見積もりを取った結果をまとめました。相場費用の業者の共通点と、費用を安く抑えるコツを紹介します。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
-    /* ===== Reset & Base ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Noto Sans JP', sans-serif;
       color: #333;
-      line-height: 1.8;
-      background: #fff;
+      line-height: 1.9;
+      background: #f5f5f5;
       -webkit-font-smoothing: antialiased;
+      font-size: 16px;
     }
     img { max-width: 100%; height: auto; display: block; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
+    a { color: #0066cc; text-decoration: underline; }
+    ul, ol { padding-left: 1.5em; }
 
-    /* ===== Utility ===== */
-    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
-    .section { padding: 60px 0; }
-    .section-title {
-      text-align: center;
-      font-size: 28px;
-      font-weight: 900;
-      margin-bottom: 12px;
-      line-height: 1.4;
+    /* ===== Layout ===== */
+    .wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
     }
-    .section-subtitle {
-      text-align: center;
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 40px;
+    .content {
+      padding: 28px 24px;
     }
-    .highlight { color: #e63946; }
-    .bg-light { background: #f8f9fa; }
-    .bg-green { background: #e8f5e9; }
+    @media (max-width: 768px) {
+      .content { padding: 20px 16px; }
+      body { font-size: 15px; }
+    }
 
     /* ===== Fixed CTA Bar (Mobile) ===== */
     .fixed-cta {
@@ -49,817 +44,850 @@
       left: 0;
       right: 0;
       z-index: 1000;
-      display: flex;
+      display: none;
       background: #fff;
       box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
       padding: 8px;
       gap: 8px;
+    }
+    @media (max-width: 768px) {
+      .fixed-cta { display: flex; }
+      body { padding-bottom: 72px; }
     }
     .fixed-cta a {
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 14px 8px;
+      gap: 6px;
+      padding: 13px 8px;
       border-radius: 8px;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 13px;
       color: #fff;
+      text-decoration: none;
       transition: opacity 0.2s;
     }
     .fixed-cta a:hover { opacity: 0.85; }
     .fixed-cta .cta-phone { background: #e63946; }
     .fixed-cta .cta-line { background: #06C755; }
-    .fixed-cta svg { width: 22px; height: 22px; flex-shrink: 0; }
-
-    @media (min-width: 769px) {
-      .fixed-cta { display: none; }
-      body { padding-bottom: 0; }
-    }
-    @media (max-width: 768px) {
-      body { padding-bottom: 72px; }
-    }
+    .fixed-cta svg { width: 20px; height: 20px; flex-shrink: 0; }
 
     /* ===== Header ===== */
     .header {
       background: #fff;
       border-bottom: 3px solid #e63946;
-      padding: 12px 0;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 999;
     }
-    .header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo {
-      font-size: 20px;
-      font-weight: 900;
-      color: #1a1a2e;
-    }
+    .logo { font-size: 18px; font-weight: 900; color: #333; }
     .logo span { color: #e63946; }
-    .header-cta {
-      display: flex;
-      gap: 10px;
-    }
-    .header-cta a {
+    .header-buttons { display: flex; gap: 8px; }
+    .header-buttons a {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 10px 20px;
+      gap: 5px;
+      padding: 8px 16px;
       border-radius: 6px;
       font-weight: 700;
-      font-size: 13px;
+      font-size: 12px;
       color: #fff;
+      text-decoration: none;
       transition: opacity 0.2s;
     }
-    .header-cta a:hover { opacity: 0.85; }
-    .header-cta .btn-phone { background: #e63946; }
-    .header-cta .btn-line { background: #06C755; }
-    .header-cta svg { width: 18px; height: 18px; }
+    .header-buttons a:hover { opacity: 0.85; }
+    .header-buttons .btn-tel { background: #e63946; }
+    .header-buttons .btn-line { background: #06C755; }
+    .header-buttons svg { width: 16px; height: 16px; }
     @media (max-width: 768px) {
-      .header-cta { display: none; }
-      .logo { font-size: 17px; }
+      .header { padding: 10px 16px; }
+      .header-buttons { display: none; }
+      .logo { font-size: 16px; }
     }
 
-    /* ===== Hero ===== */
-    .hero {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-      color: #fff;
-      padding: 60px 0 50px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+    /* ===== Title ===== */
+    .article-title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      color: #1a1a2e;
     }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -20%;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(230,57,70,0.15) 0%, transparent 70%);
-      border-radius: 50%;
+    @media (max-width: 768px) {
+      .article-title { font-size: 20px; }
     }
-    .hero-badge {
-      display: inline-block;
+    .article-meta {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 24px;
+    }
+
+    /* ===== Section Headings ===== */
+    .heading-red {
       background: #e63946;
       color: #fff;
-      font-size: 14px;
-      font-weight: 700;
-      padding: 6px 24px;
-      border-radius: 50px;
-      margin-bottom: 20px;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-    .hero h1 {
-      font-size: 36px;
+      font-size: 18px;
       font-weight: 900;
-      line-height: 1.4;
-      margin-bottom: 16px;
+      padding: 14px 20px;
+      margin: 40px -24px 24px;
+      line-height: 1.5;
     }
-    .hero h1 .accent {
-      color: #ffd166;
-      font-size: 44px;
+    @media (max-width: 768px) {
+      .heading-red { margin: 32px -16px 20px; padding: 12px 16px; font-size: 16px; }
     }
-    .hero-desc {
-      font-size: 16px;
-      opacity: 0.9;
-      margin-bottom: 30px;
-      line-height: 1.8;
+    .heading-border {
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 4px solid #e63946;
+      padding: 8px 0 8px 16px;
+      margin: 32px 0 16px;
+      line-height: 1.5;
     }
-    .hero-points {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 36px;
-    }
-    .hero-points li {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 12px 24px;
+
+    /* ===== Trouble List ===== */
+    .trouble-list {
+      background: #f0f4ff;
       border-radius: 8px;
-      font-weight: 700;
-      font-size: 15px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      list-style: none;
+      padding-left: 24px;
     }
-    .hero-points li span { color: #ffd166; font-size: 22px; }
-    .hero-cta {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .hero-cta a {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 18px 36px;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 17px;
-      color: #fff;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .hero-cta a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
-    .hero-cta .btn-phone-hero { background: #e63946; box-shadow: 0 4px 14px rgba(230,57,70,0.4); }
-    .hero-cta .btn-line-hero { background: #06C755; box-shadow: 0 4px 14px rgba(6,199,85,0.4); }
-    .hero-cta svg { width: 24px; height: 24px; }
-    .hero-sub { font-size: 13px; opacity: 0.7; margin-top: 16px; }
-
-    @media (max-width: 768px) {
-      .hero { padding: 40px 0 36px; }
-      .hero h1 { font-size: 24px; }
-      .hero h1 .accent { font-size: 30px; }
-      .hero-points li { font-size: 13px; padding: 10px 16px; }
-      .hero-cta a { padding: 14px 24px; font-size: 15px; width: 100%; justify-content: center; }
-    }
-
-    /* ===== Trouble Section ===== */
-    .trouble { background: #fff8f0; }
-    .trouble-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .trouble-card {
-      background: #fff;
-      border: 2px solid #ffe0cc;
-      border-radius: 12px;
-      padding: 24px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .trouble-card:hover { transform: translateY(-3px); }
-    .trouble-icon { font-size: 40px; margin-bottom: 12px; }
-    .trouble-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #e63946; }
-    .trouble-card p { font-size: 14px; color: #666; }
-
-    /* ===== Feature Section ===== */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-    }
-    .feature-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 32px 24px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-      text-align: center;
+    .trouble-list li {
       position: relative;
-      border-top: 4px solid #e63946;
+      padding: 6px 0 6px 20px;
+      font-size: 15px;
     }
-    .feature-num {
+    .trouble-list li::before {
+      content: '•';
       position: absolute;
-      top: -18px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #e63946;
-      color: #fff;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 16px;
-    }
-    .feature-icon { font-size: 48px; margin: 12px 0 16px; }
-    .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
-    .feature-card p { font-size: 14px; color: #666; }
-
-    /* ===== Price Section ===== */
-    .price-table {
-      max-width: 700px;
-      margin: 0 auto;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-    }
-    .price-table table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .price-table th {
-      background: #1a1a2e;
-      color: #fff;
-      padding: 14px 20px;
-      text-align: left;
-      font-size: 15px;
-    }
-    .price-table td {
-      padding: 14px 20px;
-      border-bottom: 1px solid #eee;
-      font-size: 15px;
-    }
-    .price-table tr:last-child td { border-bottom: none; }
-    .price-table tr:nth-child(even) td { background: #f8f9fa; }
-    .price-tag {
+      left: 0;
       color: #e63946;
       font-weight: 900;
       font-size: 18px;
     }
-    .price-note {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 14px;
-      color: #666;
-    }
 
-    /* ===== Flow Section ===== */
-    .flow-steps {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .flow-step {
+    /* ===== Speech Bubble ===== */
+    .bubble-wrap {
       display: flex;
-      gap: 20px;
+      gap: 14px;
       align-items: flex-start;
-      margin-bottom: 32px;
-      position: relative;
+      margin: 24px 0;
     }
-    .flow-step:not(:last-child)::after {
+    .bubble-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fce4ec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .bubble-avatar.male { background: #e3f2fd; }
+    .bubble {
+      background: #f8f8f8;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 15px;
+      line-height: 1.8;
+      position: relative;
+      flex: 1;
+    }
+    .bubble::before {
       content: '';
       position: absolute;
-      left: 27px;
-      top: 56px;
-      bottom: -32px;
-      width: 2px;
-      background: #ddd;
+      left: -8px;
+      top: 18px;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 8px solid #e0e0e0;
     }
-    .flow-num {
-      flex-shrink: 0;
-      width: 56px;
-      height: 56px;
-      background: #e63946;
-      color: #fff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 20px;
+    .bubble::after {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 19px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right: 7px solid #f8f8f8;
     }
-    .flow-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
-    .flow-content p { font-size: 14px; color: #666; }
 
-    /* ===== Voice / Testimonials ===== */
-    .voice-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-    }
-    .voice-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      border-left: 4px solid #06C755;
-    }
-    .voice-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-    .voice-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: #e8f5e9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-    }
-    .voice-name { font-weight: 700; font-size: 15px; }
-    .voice-meta { font-size: 12px; color: #999; }
-    .voice-stars { color: #ffd166; margin-bottom: 8px; font-size: 16px; }
-    .voice-text { font-size: 14px; color: #555; }
-
-    /* ===== FAQ ===== */
-    .faq-list {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .faq-item {
-      border: 1px solid #eee;
-      border-radius: 10px;
-      margin-bottom: 12px;
+    /* ===== Photo Section ===== */
+    .photo-box {
+      background: #333;
+      border-radius: 8px;
       overflow: hidden;
+      margin: 20px 0;
+      position: relative;
     }
-    .faq-q {
-      padding: 18px 20px;
-      font-weight: 700;
-      font-size: 15px;
-      cursor: pointer;
+    .photo-placeholder {
+      height: 240px;
       display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #fff;
-      transition: background 0.2s;
-    }
-    .faq-q:hover { background: #f8f9fa; }
-    .faq-q::before {
-      content: 'Q';
-      flex-shrink: 0;
-      width: 32px;
-      height: 32px;
-      background: #e63946;
-      color: #fff;
-      border-radius: 50%;
-      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-weight: 900;
-      font-size: 14px;
-    }
-    .faq-q::after {
-      content: '+';
-      margin-left: auto;
-      font-size: 20px;
-      color: #999;
-      transition: transform 0.3s;
-    }
-    .faq-item.active .faq-q::after { content: '−'; }
-    .faq-a {
-      display: none;
-      padding: 0 20px 18px 64px;
-      font-size: 14px;
-      color: #666;
-      line-height: 1.8;
-    }
-    .faq-item.active .faq-a { display: block; }
-
-    /* ===== CTA Section ===== */
-    .cta-section {
-      background: linear-gradient(135deg, #1a1a2e, #0f3460);
       color: #fff;
-      text-align: center;
-      padding: 60px 0;
+      font-weight: 700;
+      gap: 8px;
     }
-    .cta-section h2 {
-      font-size: 28px;
-      font-weight: 900;
-      margin-bottom: 12px;
-    }
-    .cta-section p {
+    .photo-placeholder .label {
+      background: rgba(0,0,0,0.6);
+      padding: 8px 24px;
+      border-radius: 4px;
       font-size: 16px;
-      opacity: 0.8;
-      margin-bottom: 32px;
     }
-    .cta-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .cta-buttons a {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 18px 40px;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 17px;
-      color: #fff;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .cta-buttons a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
-    .cta-buttons .btn-phone-cta { background: #e63946; }
-    .cta-buttons .btn-line-cta { background: #06C755; }
-    .cta-buttons svg { width: 24px; height: 24px; }
-    @media (max-width: 768px) {
-      .cta-section h2 { font-size: 22px; }
-      .cta-buttons a { width: 100%; justify-content: center; padding: 16px 24px; }
-    }
+    .photo-info { margin: 12px 0 24px; font-size: 15px; }
+    .photo-info strong { color: #333; }
 
-    /* ===== Company ===== */
-    .company-table {
-      max-width: 600px;
-      margin: 0 auto;
+    /* ===== Comparison Table ===== */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
     }
-    .company-table table { width: 100%; border-collapse: collapse; }
-    .company-table th,
-    .company-table td {
-      padding: 12px 16px;
+    .compare-table th {
+      background: #555;
+      color: #fff;
+      padding: 10px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .compare-table td {
+      padding: 14px 12px;
       border-bottom: 1px solid #eee;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .compare-table tr:nth-child(even) td { background: #fafafa; }
+    .compare-table .company-name {
+      font-weight: 700;
       font-size: 14px;
       text-align: left;
     }
-    .company-table th {
-      width: 30%;
-      background: #f8f9fa;
+    .compare-table .rank1 td { background: #fff9e6; }
+    .price-good { color: #e63946; font-weight: 900; }
+    .price-normal { color: #666; }
+    .price-warn { color: #f9a825; font-weight: 700; }
+    .price-bad { color: #999; }
+    .icon-good { color: #4caf50; font-size: 20px; }
+    .icon-warn { color: #f9a825; font-size: 20px; }
+    .icon-bad { color: #e53935; font-size: 20px; }
+    .link-detail { color: #0066cc; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .link-detail:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .compare-table { font-size: 12px; }
+      .compare-table th, .compare-table td { padding: 10px 6px; }
+    }
+
+    /* ===== Highlight Text ===== */
+    .red { color: #e63946; }
+    .red-bold { color: #e63946; font-weight: 900; }
+    .red-bg { background: linear-gradient(transparent 60%, #ffeaa7 60%); font-weight: 700; }
+    .big-num { font-size: 1.8em; font-weight: 900; color: #e63946; }
+    .marker-yellow { background: linear-gradient(transparent 60%, #fff59d 60%); }
+    .bold { font-weight: 700; }
+
+    /* ===== Arrow / Transition ===== */
+    .arrow-down {
+      text-align: center;
+      margin: 28px 0;
+    }
+    .arrow-label {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
       font-weight: 700;
+      font-size: 14px;
+      padding: 8px 24px;
+      border-radius: 50px;
+    }
+
+    /* ===== Spec Table (per company) ===== */
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .spec-table th {
+      background: #4a9bd9;
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 13px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .spec-table td {
+      padding: 10px 12px;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* ===== Company Section ===== */
+    .company-section {
+      margin: 40px 0;
+      padding-top: 8px;
+    }
+    .company-rank {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      color: #333;
+    }
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+    }
+    .rank-1 { background: #ffd700; }
+    .rank-2 { background: #aaa; }
+    .rank-3 { background: #cd7f32; }
+    .rank-4 { background: #78909c; }
+    .rank-5 { background: #78909c; }
+    .company-banner {
+      background: #eee;
+      border-radius: 8px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 12px 0;
+      color: #999;
+      font-size: 14px;
+      border: 1px solid #ddd;
+    }
+    .company-link {
+      display: block;
+      margin: 16px 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* ===== CTA Button ===== */
+    .cta-box {
+      text-align: center;
+      margin: 32px 0;
+      padding: 24px;
+      background: #fffde7;
+      border: 2px solid #ffd54f;
+      border-radius: 12px;
+    }
+    .cta-box .cta-label {
+      color: #e63946;
+      font-weight: 900;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .cta-btn {
+      display: block;
+      background: #e63946;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 16px;
+      padding: 16px 24px;
+      border-radius: 8px;
+      margin: 8px auto;
+      max-width: 480px;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .cta-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+    .cta-btn.line-btn { background: #06C755; }
+    .cta-sub {
+      font-size: 13px;
+      color: #888;
+      margin-top: 8px;
+    }
+
+    /* ===== Inline CTA (Phone + LINE) ===== */
+    .inline-cta {
+      display: flex;
+      gap: 12px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+    .inline-cta a {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .inline-cta a:hover { opacity: 0.9; transform: translateY(-1px); }
+    .inline-cta .btn-tel { background: #e63946; box-shadow: 0 3px 12px rgba(230,57,70,0.3); }
+    .inline-cta .btn-line { background: #06C755; box-shadow: 0 3px 12px rgba(6,199,85,0.3); }
+    .inline-cta svg { width: 22px; height: 22px; }
+
+    /* ===== Warning Image ===== */
+    .warning-box {
+      background: #fff;
+      border: 3px solid #e63946;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+    .warning-inner {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .warning-inner .line1 {
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .warning-inner .line2 {
+      font-size: 20px;
+      font-weight: 900;
+      color: #ffd166;
+    }
+
+    /* ===== Tips Section ===== */
+    .tips-icon {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 80px;
     }
 
     /* ===== Footer ===== */
     .footer {
-      background: #1a1a2e;
-      color: rgba(255,255,255,0.6);
       text-align: center;
-      padding: 24px 0;
+      padding: 20px;
       font-size: 13px;
+      color: #999;
+      border-top: 1px solid #eee;
     }
+    .footer a { color: #999; font-size: 13px; }
     @media (max-width: 768px) {
-      .footer { padding-bottom: 88px; }
+      .footer { padding-bottom: 80px; }
     }
 
-    /* ===== Responsive adjustments ===== */
-    @media (max-width: 768px) {
-      .section { padding: 40px 0; }
-      .section-title { font-size: 22px; }
-      .features-grid { grid-template-columns: 1fr; }
-      .trouble-grid { grid-template-columns: 1fr; }
-      .voice-grid { grid-template-columns: 1fr; }
-    }
+    /* ===== Paragraph spacing ===== */
+    .content p { margin-bottom: 16px; }
+    .content p:last-child { margin-bottom: 0; }
+
+    /* ===== SVG Icons (inline) ===== */
+    .svg-phone, .svg-line { width: 22px; height: 22px; flex-shrink: 0; }
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="logo">害獣駆除<span>プロナビ</span></div>
-      <div class="header-cta">
-        <a href="tel:0120-000-000" class="btn-phone">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-          0120-000-000
-        </a>
-        <a href="https://line.me/R/" class="btn-line" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
-          LINE相談
-        </a>
-      </div>
+    <div class="logo">害獣駆除<span>比較ナビ</span></div>
+    <div class="header-buttons">
+      <a href="tel:0120-000-000" class="btn-tel">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+        0120-000-000
+      </a>
+      <a href="https://line.me/R/" class="btn-line" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2z"/></svg>
+        LINE相談
+      </a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-badge">24時間365日受付中</div>
-      <h1>
-        害獣のお悩み<br>
-        <span class="accent">最短即日</span>で解決します
-      </h1>
-      <p class="hero-desc">
-        ネズミ・イタチ・ハクビシン・アライグマ・コウモリ<br>
-        見積もり無料・追加料金なし・<strong>再発保証最大10年</strong>
-      </p>
-      <ul class="hero-points">
-        <li><span>0</span>円 現地調査</li>
-        <li>最短<span>30</span>分で到着</li>
-        <li>施工実績<span>50,000</span>件超</li>
+  <div class="wrapper">
+    <div class="content">
+
+      <!-- Title -->
+      <h1 class="article-title">害獣駆除の費用相場はいくら？知らないと<span class="red">26万円</span>も大損するかも！害獣駆除業者5社比較で紹介</h1>
+      <p class="article-meta">更新日：2026/04/14</p>
+
+      <!-- Trouble List -->
+      <p>今、以下に当てはまる方はお読みください。</p>
+      <ul class="trouble-list">
+        <li>屋根裏、壁、床下から何か動物らしき物音が聞こえる。</li>
+        <li>ネズミ、ハクビシン、アライグマなどの害獣が住み着いている。</li>
+        <li>他のサイトを見ても、<span class="marker-yellow">業者の良い口コミだけ掲載するから信用できない。</span></li>
+        <li><span class="marker-yellow">信頼できる駆除業者に依頼して、早く安心した日常を取り戻したい。</span></li>
       </ul>
-      <div class="hero-cta">
-        <a href="tel:0120-000-000" class="btn-phone-hero">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-          0120-000-000
-        </a>
-        <a href="https://line.me/R/" class="btn-line-hero" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
-          LINEで無料相談
-        </a>
-      </div>
-      <p class="hero-sub">※ 通話料無料・年中無休で対応いたします</p>
-    </div>
-  </section>
 
-  <!-- Trouble -->
-  <section class="section trouble">
-    <div class="container">
-      <h2 class="section-title">こんな<span class="highlight">お悩み</span>ありませんか？</h2>
-      <p class="section-subtitle">一つでも当てはまる方は今すぐご相談ください</p>
-      <div class="trouble-grid">
-        <div class="trouble-card">
-          <div class="trouble-icon">🐀</div>
-          <h3>天井裏から物音がする</h3>
-          <p>夜中にドタドタと走り回る音…ネズミやハクビシンが住み着いているかもしれません。</p>
-        </div>
-        <div class="trouble-card">
-          <div class="trouble-icon">💩</div>
-          <h3>フンや尿の臭いがひどい</h3>
-          <p>害獣のフンや尿は悪臭だけでなく、ダニ・ノミの発生や感染症の原因にもなります。</p>
-        </div>
-        <div class="trouble-card">
-          <div class="trouble-icon">🏠</div>
-          <h3>家屋の損傷が気になる</h3>
-          <p>柱や配線をかじられて、漏電や火災のリスクが高まっていませんか？</p>
-        </div>
-        <div class="trouble-card">
-          <div class="trouble-icon">🌾</div>
-          <h3>農作物が荒らされている</h3>
-          <p>イノシシやシカ、アライグマによる農作物被害でお困りの方も対応いたします。</p>
-        </div>
-        <div class="trouble-card">
-          <div class="trouble-icon">😰</div>
-          <h3>自分で対策したが効果なし</h3>
-          <p>市販の対策グッズでは限界があります。プロによる根本的な駆除が必要です。</p>
-        </div>
-        <div class="trouble-card">
-          <div class="trouble-icon">❓</div>
-          <h3>どこに頼めばいいかわからない</h3>
-          <p>悪質な業者もいるため業者選びは重要。私たちが安心の施工をお約束します。</p>
+      <p>このような悩みがあっても解決できます。</p>
+      <p>私が住んでいる家でも<span class="red-bold">害獣が住み着いて被害を受けた</span>ので、</p>
+
+      <!-- Bubble -->
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          <span class="red-bg">実際に5社見積りした結果</span>と、<span class="red-bg">相場費用の業者の共通点</span>をまとめました。<br>
+          最後まで読み終えたときには<span class="red-bold">信頼できる害獣駆除業者を見つけられます。</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Features -->
-  <section class="section bg-light">
-    <div class="container">
-      <h2 class="section-title">選ばれる<span class="highlight">5つの理由</span></h2>
-      <p class="section-subtitle">害獣駆除プロナビが多くのお客様に選ばれる理由をご紹介</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-num">1</div>
-          <div class="feature-icon">🏆</div>
-          <h3>施工実績50,000件超</h3>
-          <p>年間10,000件以上の施工実績。豊富な経験とノウハウで確実に害獣を駆除します。</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-num">2</div>
-          <div class="feature-icon">⚡</div>
-          <h3>最短30分で現場に到着</h3>
-          <p>全国にスタッフを配置。お電話いただいてから最短30分でお伺いします。</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-num">3</div>
-          <div class="feature-icon">💰</div>
-          <h3>見積もり後の追加料金なし</h3>
-          <p>明朗会計を徹底。お見積もり金額以上のご請求は一切いたしません。</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-num">4</div>
-          <div class="feature-icon">🛡️</div>
-          <h3>最大10年の再発保証</h3>
-          <p>万が一再発した場合は無料で再施工。長期保証で安心をお届けします。</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-num">5</div>
-          <div class="feature-icon">📋</div>
-          <h3>自治体届出・各種資格保有</h3>
-          <p>有害鳥獣捕獲許可をはじめ、必要な資格・届出をすべてクリアしています。</p>
+      <!-- Photo -->
+      <div class="heading-red">実際に害獣駆除をした家です</div>
+      <div class="photo-box">
+        <div class="photo-placeholder">
+          <span style="font-size:48px">🏠</span>
+          <span class="label">実際に害獣駆除をした物件</span>
         </div>
       </div>
-    </div>
-  </section>
+      <p class="photo-info"><strong>被害を受けた家：</strong>築43年の木造戸建て<br><strong>被害状況：</strong>天井に糞や尿の黄色シミ、夜中に屋根裏から聞こえる物音</p>
 
-  <!-- Price -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">わかりやすい<span class="highlight">料金体系</span></h2>
-      <p class="section-subtitle">現地調査・お見積もりは完全無料です</p>
-      <div class="price-table">
-        <table>
-          <thead>
-            <tr>
-              <th>害獣の種類</th>
-              <th>料金目安（税込）</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>ネズミ駆除</td>
-              <td><span class="price-tag">14,300円〜</span></td>
-            </tr>
-            <tr>
-              <td>イタチ駆除</td>
-              <td><span class="price-tag">24,200円〜</span></td>
-            </tr>
-            <tr>
-              <td>ハクビシン駆除</td>
-              <td><span class="price-tag">24,200円〜</span></td>
-            </tr>
-            <tr>
-              <td>アライグマ駆除</td>
-              <td><span class="price-tag">27,500円〜</span></td>
-            </tr>
-            <tr>
-              <td>コウモリ駆除</td>
-              <td><span class="price-tag">19,800円〜</span></td>
-            </tr>
-            <tr>
-              <td>その他害獣</td>
-              <td><span class="price-tag">お見積もり</span></td>
-            </tr>
-          </tbody>
+      <div class="arrow-down"><span class="arrow-label">実際に5社査定して…</span></div>
+
+      <!-- 見積もり結果 -->
+      <div class="heading-red">害獣駆除業者に見積りした結果がこちらです</div>
+
+      <p>害獣駆除について、ネットで少し調べただけでも<span class="bold">業者は何十社</span>もあり、</p>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          ほとんどの業者が駆除料金「9,000円〜」のように<strong>最低価格</strong>しか公式サイトに掲載されていないので、<span class="red-bg">結局いくらで駆除できるのか</span>わかりませんでした。
+        </div>
+      </div>
+
+      <p>そこで、複数のウェブサイトで<span class="red-bg">上位になっていた5社</span>へ実際に見積りをした結果を、以下にまとめました。</p>
+
+      <p>相場は<span class="big-num">総額6万3000円</span>でしたので、その金額を基準としています。</p>
+
+      <!-- Comparison Table -->
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>駆除業者名</th>
+            <th>見積り金額</th>
+            <th>駆除実績</th>
+            <th>公式サイト</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="rank1">
+            <td class="company-name">🥇 害獣プロテック</td>
+            <td><span class="icon-good">◎</span><br><span class="price-good">相場より安い<br>駆除料金20%OFF<br>キャンペーン中！</span></td>
+            <td><span class="icon-good">◎</span><br>30,000件超え</td>
+            <td><a href="#company1" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">🥈 害獣プロガード</td>
+            <td><span class="icon-good">◯</span><br><span class="price-normal">相場</span></td>
+            <td><span class="icon-good">◯</span><br>10,000件</td>
+            <td><a href="#company2" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">🥉 ハウスプロテクト</td>
+            <td><span class="icon-good">◯</span><br><span class="price-normal">相場よりやや高い</span></td>
+            <td><span class="icon-warn">△</span><br>非公開</td>
+            <td><a href="#company3" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">4. 害獣Buzz</td>
+            <td><span class="icon-warn">△</span><br><span class="price-warn">相場より高い</span></td>
+            <td><span class="icon-warn">△</span><br>非公開</td>
+            <td><a href="#company4" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">5. 害獣駆除110番</td>
+            <td><span class="icon-bad">✕</span><br><span class="price-bad">相場より安すぎる</span></td>
+            <td><span class="icon-good">◯</span><br>問合せは500万件</td>
+            <td><a href="#company5" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>5社に査定金額を出してもらいましたが、業者によって<span class="big-num">26万円の差</span>が出たことに驚きました。</p>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          なぜ、害獣駆除業者によって、<span class="red-bold">こんなにも金額に差が出る</span>のでしょうか？
+        </div>
+      </div>
+
+      <!-- 共通点 -->
+      <div class="arrow-down"><span class="arrow-label">相場費用の業者には共通点が</span></div>
+      <div class="heading-red">相場費用の害獣駆除業者【2つの共通点】</div>
+
+      <div class="warning-box">
+        <div class="warning-inner">
+          <div class="line1">これ知らないと危険</div>
+          <div class="line2">高額請求ぼったくりに注意</div>
+        </div>
+      </div>
+
+      <p>実際に見積りしてわかったのですが、<span class="red-bg">相場費用の駆除業者には2つの共通点</span>がありました。</p>
+
+      <h3 class="heading-border">1. 創業10年以上経っていて、駆除実績も多いか</h3>
+
+      <div class="tips-icon">📈</div>
+
+      <p>実際に見積りした駆除業者は複数のウェブサイトに上位で紹介されているだけあり、<span class="bold">どの業者も駆除実績は多そうな印象</span>でした。</p>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          その中でも、<span class="bold">創業が10年以上経っている業者は、駆除実績が多いだけでなく</span>、<span class="red-bg">作業項目も明確で相場費用の見積り</span>を出してくれる事がわかりました。
+        </div>
+      </div>
+
+      <p>また創業が10年以上経っている業者は、<span class="red-bg">駆除経験が豊富なスタッフが対応してくれる</span>ので、<span class="red-bold">被害と関係ない余計な作業もしない</span>ので、適正価格で見積りできるというわけですね。</p>
+
+      <h3 class="heading-border">2. 電話やメールで駆除費用の概算を教えてくれるか</h3>
+
+      <div class="tips-icon">📞</div>
+
+      <p>電話やメールで問い合わせても、おおよその<span class="red-bold">概算も教えてくれない業者には要注意</span>です。</p>
+      <p>現地調査後に情報弱者や支払能力が高い人だと判断された場合、高額の見積りを出してくる業者もいるからです。</p>
+      <p>被害状況を伝えるだけで、<span class="red-bg">実際の見積もりに近い概算を教えてくれた</span>のは「害獣プロテック」でした。</p>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          やはり創業から長く、経験豊富な業者は対応が違いますね。<span class="bold">電話するとわかりますが、他社と比べて受け答えがしっかり</span>しています。
+        </div>
+      </div>
+
+      <!-- 5社詳細 -->
+      <div class="arrow-down"><span class="arrow-label">見積りした5社の駆除業者</span></div>
+      <div class="heading-red">害獣駆除業者の特徴をまとめました</div>
+
+      <!-- 1. 害獣プロテック -->
+      <div class="company-section" id="company1">
+        <div class="company-rank"><span class="rank-badge rank-1">1</span> 相場費用で屋根裏の害獣駆除が得意「害獣プロテック」</div>
+        <div class="company-banner">【害獣プロテック 公式サイトイメージ】<br>現3代目・工務店歴50年以上のお家のプロが害獣被害から守ります！</div>
+        <table class="spec-table">
+          <tr><th>業態</th><th>見積り金額</th><th>保証内容</th><th>創業</th></tr>
+          <tr><td>◎<br>自社施工</td><td>◎<br>相場より安い</td><td>◎<br>最長10年間</td><td>◎<br>20年以上</td></tr>
+          <tr><th>駆除実績</th><th colspan="2">対応エリア</th><th>対応害獣</th></tr>
+          <tr><td>◎<br>30,000件超え</td><td colspan="2">全国対応</td><td>ネズミ、ハクビシン、アライグマ、コウモリ、イタチ</td></tr>
         </table>
-      </div>
-      <p class="price-note">※ 被害状況や建物の構造により料金は変動します。まずは無料調査をご利用ください。</p>
-    </div>
-  </section>
+        <p>害獣プロテックは、20年以上続く、害獣駆除業者です。</p>
+        <p>経験豊富なスタッフが在籍しており、<span class="red-bold">ネズミ、ハクビシンなどの屋根裏駆除を得意</span>としています。</p>
+        <p><span class="red-bold">保証期間も最長10年間</span>と長く、保証期間内であれば無料対応ですぐ駆けつけてくれるのも安心ポイント。</p>
+        <p>実際に現地見積りを依頼したときも、屋根裏の隅々まで丁寧に調査してくれました。<span class="bold">創業20年以上の専門業者は、料金説明も技術も安心できますね。</span></p>
+        <p>対応スピードも早いので、できるだけ早く現地調査をしたい方、見積りがほしい方は一度相談しておくべき業者です。</p>
 
-  <!-- Flow -->
-  <section class="section bg-light">
-    <div class="container">
-      <h2 class="section-title">ご依頼の<span class="highlight">流れ</span></h2>
-      <p class="section-subtitle">お問い合わせから施工完了まで最短即日で対応</p>
-      <div class="flow-steps">
-        <div class="flow-step">
-          <div class="flow-num">1</div>
-          <div class="flow-content">
-            <h3>お問い合わせ</h3>
-            <p>お電話またはLINEでお気軽にご連絡ください。24時間365日受付中です。</p>
-          </div>
-        </div>
-        <div class="flow-step">
-          <div class="flow-num">2</div>
-          <div class="flow-content">
-            <h3>無料現地調査</h3>
-            <p>経験豊富なスタッフが現地を調査。被害状況を正確に把握します。</p>
-          </div>
-        </div>
-        <div class="flow-step">
-          <div class="flow-num">3</div>
-          <div class="flow-content">
-            <h3>お見積もり提出</h3>
-            <p>調査結果に基づき、最適な駆除プランとお見積もりをご提出。追加料金は一切なし。</p>
-          </div>
-        </div>
-        <div class="flow-step">
-          <div class="flow-num">4</div>
-          <div class="flow-content">
-            <h3>駆除施工</h3>
-            <p>捕獲・追い出し・侵入口封鎖・消毒清掃まで一貫して対応します。</p>
-          </div>
-        </div>
-        <div class="flow-step">
-          <div class="flow-num">5</div>
-          <div class="flow-content">
-            <h3>アフターフォロー</h3>
-            <p>施工後も安心の最大10年保証。再発時は無料で再施工いたします。</p>
-          </div>
+        <div class="cta-box">
+          <p class="cta-label">＼ 24時間コールセンター受付中 ／</p>
+          <a href="tel:0120-000-000" class="cta-btn">【完全無料】害獣プロテックの無料調査＆見積りをしてみる⇒</a>
+          <a href="https://line.me/R/" class="cta-btn line-btn" target="_blank" rel="noopener">LINEで無料相談する ⇒</a>
+          <p class="cta-sub">見積り・現地調査・キャンセル無料<br>年中無休、最短当日で作業可能！</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Testimonials -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">お客様の<span class="highlight">声</span></h2>
-      <p class="section-subtitle">実際にご利用いただいたお客様からの評価</p>
-      <div class="voice-grid">
-        <div class="voice-card">
-          <div class="voice-header">
-            <div class="voice-avatar">👩</div>
-            <div>
-              <div class="voice-name">T.S 様</div>
-              <div class="voice-meta">東京都 / ネズミ駆除</div>
-            </div>
-          </div>
-          <div class="voice-stars">★★★★★</div>
-          <p class="voice-text">天井裏のネズミに悩んでいましたが、電話した翌日に来てくれてすぐに解決。対応も丁寧で、見積もり通りの金額で安心できました。</p>
-        </div>
-        <div class="voice-card">
-          <div class="voice-header">
-            <div class="voice-avatar">👨</div>
-            <div>
-              <div class="voice-name">K.M 様</div>
-              <div class="voice-meta">大阪府 / ハクビシン駆除</div>
-            </div>
-          </div>
-          <div class="voice-stars">★★★★★</div>
-          <p class="voice-text">屋根裏にハクビシンが住み着いていて困っていました。侵入口の封鎖までしっかりやってくれて、半年以上経ちますが再発なし。保証もあるので安心です。</p>
-        </div>
-        <div class="voice-card">
-          <div class="voice-header">
-            <div class="voice-avatar">👩</div>
-            <div>
-              <div class="voice-name">A.Y 様</div>
-              <div class="voice-meta">愛知県 / イタチ駆除</div>
-            </div>
-          </div>
-          <div class="voice-stars">★★★★☆</div>
-          <p class="voice-text">他社より見積もりが安かったのと、説明が丁寧だったのが決め手でした。施工も手際よく、1日で完了。臭いもなくなりました。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section bg-light">
-    <div class="container">
-      <h2 class="section-title">よくある<span class="highlight">ご質問</span></h2>
-      <p class="section-subtitle">お客様からよくいただくご質問にお答えします</p>
-      <div class="faq-list">
-        <div class="faq-item active">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">見積もりは本当に無料ですか？</div>
-          <div class="faq-a">はい、現地調査・お見積もりは完全無料です。お見積もり後にキャンセルされた場合も一切費用はかかりません。お気軽にお問い合わせください。</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">どのくらいの時間で来てもらえますか？</div>
-          <div class="faq-a">お住まいのエリアや状況によりますが、最短30分〜1時間程度でお伺いできます。お急ぎの場合はお電話でお伝えください。</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">施工中、家にいなくても大丈夫ですか？</div>
-          <div class="faq-a">基本的には立ち会いをお願いしておりますが、難しい場合はご相談に応じます。施工前後の写真撮影や動画記録も行っておりますのでご安心ください。</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">ペットがいても施工できますか？</div>
-          <div class="faq-a">はい、ペットに配慮した安全な方法で施工いたします。使用する薬剤についても事前にご説明いたしますので、ご安心ください。</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="this.parentElement.classList.toggle('active')">再発した場合はどうなりますか？</div>
-          <div class="faq-a">最大10年の再発保証をお付けしております。保証期間内に再発した場合は、無料で再施工いたします。</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>害獣の被害は<span style="color:#ffd166">放置するほど悪化</span>します</h2>
-      <p>まずは無料調査でプロに相談。お見積もりだけでもお気軽にどうぞ。</p>
-      <div class="cta-buttons">
-        <a href="tel:0120-000-000" class="btn-phone-cta">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.49a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
-          0120-000-000
-        </a>
-        <a href="https://line.me/R/" class="btn-line-cta" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
-          LINEで無料相談
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Company -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">運営会社<span class="highlight">情報</span></h2>
-      <div class="company-table">
-        <table>
-          <tr><th>会社名</th><td>株式会社プロナビ（架空）</td></tr>
-          <tr><th>所在地</th><td>東京都渋谷区神宮前1-1-1</td></tr>
-          <tr><th>設立</th><td>2015年4月</td></tr>
-          <tr><th>代表</th><td>山田 太郎</td></tr>
-          <tr><th>事業内容</th><td>害獣駆除・害虫駆除・消毒清掃</td></tr>
-          <tr><th>電話番号</th><td>0120-000-000</td></tr>
-          <tr><th>対応エリア</th><td>全国（一部離島を除く）</td></tr>
+      <!-- 2. 害獣プロガード -->
+      <div class="company-section" id="company2">
+        <div class="company-rank"><span class="rank-badge rank-2">2</span> 害獣プロガード</div>
+        <div class="company-banner">【害獣プロガード 公式サイトイメージ】<br>害獣被害をSTOP！安心の再発保証つき</div>
+        <table class="spec-table">
+          <tr><th>業態</th><th>見積り金額</th><th>保証内容</th><th>創業</th></tr>
+          <tr><td>◎<br>自社施工</td><td>◯<br>相場</td><td>◎<br>最長10年間</td><td>◯<br>18年</td></tr>
+          <tr><th>駆除実績</th><th colspan="2">対応エリア</th><th>対応害獣</th></tr>
+          <tr><td>◯<br>10,000件</td><td colspan="2">全国</td><td>ネズミ、ハクビシン、アライグマ、イタチ、コウモリ</td></tr>
         </table>
+        <p>害獣プロガードは、創業から18年続く、全国展開の害獣駆除業者。</p>
+        <p>経験豊富な作業スタッフが多く、再発防止に欠かせない<span class="red-bold">侵入口封鎖の技術力も評判が高い</span>です。</p>
+        <p><span class="red-bg">個人宅をはじめ、マンション・店舗・施設</span>の害獣駆除も可能です。</p>
+        <p>最終的な総額費用と保証期間は、現地調査完了後に見積りを出して教えてくれます。</p>
+        <a href="#" class="company-link">&gt;&gt;害獣プロガードの公式サイト</a>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 害獣駆除プロナビ All Rights Reserved.（※これは架空のLPです）</p>
+      <!-- 3. ハウスプロテクト -->
+      <div class="company-section" id="company3">
+        <div class="company-rank"><span class="rank-badge rank-3">3</span> ハウスプロテクト</div>
+        <div class="company-banner">【ハウスプロテクト 公式サイトイメージ】<br>"害獣被害"は、必ず"再発"します！</div>
+        <table class="spec-table">
+          <tr><th>業態</th><th>見積り金額</th><th>保証内容</th><th>創業</th></tr>
+          <tr><td>◎<br>自社施工</td><td>◯<br>相場よりやや高い</td><td>◎<br>最長10年間</td><td>△<br>非公開</td></tr>
+          <tr><th>駆除実績</th><th colspan="2">対応エリア</th><th>対応害獣</th></tr>
+          <tr><td>△<br>非公開</td><td colspan="2">全国対応</td><td>ハクビシン、ネズミ、アライグマ、イタチ、</td></tr>
+        </table>
+        <p>ハウスプロテクトは、<span class="bold">全国対応の害獣駆除業者</span>で、他社に断られた地域でも相談可能です。</p>
+        <p>駆除実績は公式サイトで随時更新されていますが、<span class="red-bold">料金は最低価格しか記載がなく、現地調査後に見積りを提示してくれます。</span></p>
+        <p>営業所は全国6ヵ所あり、問い合わせの時間帯によっては<span class="bold">即日調査も可能</span>です。</p>
+        <a href="#" class="company-link">&gt;&gt;ハウスプロテクトの公式サイト</a>
+      </div>
+
+      <!-- 4. 害獣Buzz -->
+      <div class="company-section" id="company4">
+        <div class="company-rank"><span class="rank-badge rank-4">4</span> 害獣Buzz（害獣バズ）</div>
+        <div class="company-banner">【害獣Buzz 公式サイトイメージ】<br>再発する害獣被害にSTOP!</div>
+        <table class="spec-table">
+          <tr><th>業態</th><th>見積り金額</th><th>保証内容</th><th>創業</th></tr>
+          <tr><td>◎<br>自社施工</td><td>△<br>相場より高い</td><td>◎<br>最長10年間</td><td>△<br>2年</td></tr>
+          <tr><th>駆除実績</th><th colspan="2">対応エリア</th><th>対応害獣</th></tr>
+          <tr><td>△<br>非公開</td><td colspan="2">全国対応</td><td>ハクビシン、ネズミ、アライグマ、イタチ、</td></tr>
+        </table>
+        <p>害獣Buzzは、すべて自社施工で<span class="bold">全国対応の害獣駆除業者。</span></p>
+        <p>まだ創業して3年も経っていませんが、<span class="red-bg">大手駆除業者で経験を積んだスタッフが在籍</span>しています。</p>
+        <p>年中無休で<span class="bold">24時間電話受付</span>なので、すぐ相談したいときに頼りになる業者です。</p>
+        <a href="#" class="company-link">&gt;&gt;害獣Buzzの公式サイト</a>
+      </div>
+
+      <!-- 5. 害獣110番 -->
+      <div class="company-section" id="company5">
+        <div class="company-rank"><span class="rank-badge rank-5">5</span> 害獣110番</div>
+        <div class="company-banner">【害獣110番 公式サイトイメージ】<br>安心の明朗会計 13,000円〜（税込14,300円〜）</div>
+        <table class="spec-table">
+          <tr><th>業態</th><th>見積り金額</th><th>保証内容</th><th>創業</th></tr>
+          <tr><td>△<br>業者の紹介サービス</td><td>△<br>相場より安すぎる</td><td>✕<br>期間非公開</td><td>◯<br>17年</td></tr>
+          <tr><th>駆除実績</th><th colspan="2">対応エリア</th><th>対応害獣</th></tr>
+          <tr><td>◯<br>問合せは累計500万件</td><td colspan="2">全国対応</td><td>ハクビシン、ネズミ、アライグマ、コウモリ、イタチ、</td></tr>
+        </table>
+        <p>害獣駆除110番は、上場企業のシェアリングテクノロジー株式会社が運営する<span class="bold">害獣駆除業者の紹介サービス</span>です。</p>
+        <p>害獣駆除110番の加盟店となっている業者が現地調査や作業を対応するので、どうしても加盟店によって技術に差が出てしまうようです。</p>
+        <p>一旦駆除だけやってほしい人は依頼してもいいかもしれませんが、<span class="red-bg">侵入口封鎖など再発防止の技術力も求める人は他の業者と相見積もりしておくと安心</span>です。</p>
+        <a href="#" class="company-link">&gt;&gt;害獣110番の公式サイト</a>
+      </div>
+
+      <!-- コツ -->
+      <div class="arrow-down"><span class="arrow-label">＼ 最後に… ／</span></div>
+      <div class="heading-red">害獣駆除費用を安く抑える2つのコツ</div>
+
+      <h3 class="heading-border">1. 被害が拡大する前に早期に駆除する</h3>
+
+      <div class="tips-icon">🏗️</div>
+
+      <p>害獣駆除費用は被害状況によって大きく異なります。</p>
+      <p>そのため被害が拡大する前に、<span class="bold">追い出しや駆除することで費用を抑える</span>ことができます。</p>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          反対に<span class="red-bg">被害をそのまま放置しておくと、駆除費用が高くなるだけではなく、糞尿による天井板の腐敗、廊下や部屋の悪臭被害を引き起こします。</span>
+        </div>
+      </div>
+
+      <p>さらに<span class="bold">被害が深刻化した場合</span>、<span class="red-bold">天井や壁の張り替えなど修繕費用も必要となり出費が高額になる恐れも。</span></p>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          異変に気付いたらすぐに相談することで、<span class="red-bg">被害と費用を最小限に抑えられるわけですね。</span>
+        </div>
+      </div>
+
+      <h3 class="heading-border">2. 複数業者に同時見積りで相場を確認する</h3>
+
+      <div class="tips-icon">📋</div>
+
+      <p>害獣駆除費用は業者によって、<span class="red-bold">数万円〜数十万円の差</span>が出ることがわかりました。</p>
+      <p>1社だけでは適正価格なのか判断しづらいですが、<span class="red-bg">複数の業者に見積りすることで相場を確認</span>できます。</p>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          駆除費用は決して安い価格ではないので、忙しくて時間がない方や何社も対応するのが面倒な方でも、<span class="red-bg">最低2社から見積りしておくと安心です。</span>
+        </div>
+      </div>
+
+      <!-- 最終まとめ -->
+      <div class="heading-red">害獣駆除業者に見積りした結果まとめ</div>
+
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>駆除業者名</th>
+            <th>見積り金額</th>
+            <th>駆除実績</th>
+            <th>公式サイト</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="rank1">
+            <td class="company-name">🥇 害獣プロテック</td>
+            <td><span class="icon-good">◎</span><br><span class="price-good">相場より安い<br>駆除料金20%OFF<br>キャンペーン中！</span></td>
+            <td><span class="icon-good">◎</span><br>30,000件超え</td>
+            <td><a href="#company1" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">🥈 害獣プロガード</td>
+            <td><span class="icon-good">◯</span><br><span class="price-normal">相場</span></td>
+            <td><span class="icon-good">◯</span><br>10,000件</td>
+            <td><a href="#company2" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">🥉 ハウスプロテクト</td>
+            <td><span class="icon-good">◯</span><br><span class="price-normal">相場よりやや高い</span></td>
+            <td><span class="icon-warn">△</span><br>非公開</td>
+            <td><a href="#company3" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">4. 害獣Buzz</td>
+            <td><span class="icon-warn">△</span><br><span class="price-warn">相場より高い</span></td>
+            <td><span class="icon-warn">△</span><br>非公開</td>
+            <td><a href="#company4" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+          <tr>
+            <td class="company-name">5. 害獣駆除110番</td>
+            <td><span class="icon-bad">✕</span><br><span class="price-bad">相場より安すぎる</span></td>
+            <td><span class="icon-good">◯</span><br>問合せは500万件</td>
+            <td><a href="#company5" class="link-detail">&gt;&gt;詳細をみる</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          害獣駆除業者には、それぞれ特徴がありますが、いずれも<span class="bold">現地調査や見積りは無料</span>なので、気になったら問い合わせて相談してみるだけでも大丈夫ですよ♪
+        </div>
+      </div>
+
+      <p>まだどこにも見積りしていなくて迷っている方は、<span class="bold">私も害獣駆除をしてもらった「害獣プロテック」</span>に相談すれば、まず間違いないと言えるので検討してみてくださいね。</p>
+
+      <!-- Final CTA -->
+      <div class="cta-box">
+        <p class="cta-label">＼ 24時間コールセンター受付中 ／</p>
+        <a href="tel:0120-000-000" class="cta-btn">【完全無料】害獣プロテックの無料調査＆見積りをしてみる⇒</a>
+        <a href="https://line.me/R/" class="cta-btn line-btn" target="_blank" rel="noopener">LINEで無料相談する ⇒</a>
+        <p class="cta-sub">見積り・現地調査・キャンセル無料<br>年中無休、最短当日で作業可能！</p>
+      </div>
+
+      <div class="bubble-wrap">
+        <div class="bubble-avatar">👩</div>
+        <div class="bubble">
+          このページでは、<span class="red-bg">実際に5社見積りした結果</span>と、<span class="red-bg">相場価格の業者の共通点</span>をまとめました。<br><br>
+          今、あなたの家が害獣被害を受け、<span class="bold">相場価格で駆除したい、信頼できる業者に依頼したい</span>と思っているときに、少しでも役立つ記事となれば幸いです。
+        </div>
+      </div>
+
     </div>
-  </footer>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="#">運営者情報</a>
+      <p>Copyright &copy; 2026 害獣駆除比較ナビ All Rights Reserved.（※これは架空のLPです）</p>
+    </footer>
+  </div>
 
   <!-- Fixed CTA Bar (Mobile) -->
   <div class="fixed-cta">
@@ -868,7 +896,7 @@
       電話で相談
     </a>
     <a href="https://line.me/R/" class="cta-line" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2zm-3.08 11.27H6.58a.55.55 0 01-.55-.55V8.54a.55.55 0 011.1 0v3.63h1.79a.55.55 0 010 1.1zm1.67-.55a.55.55 0 01-1.1 0V8.54a.55.55 0 011.1 0v4.18zm4.38 0a.55.55 0 01-.44.54.55.55 0 01-.52-.26l-2.38-3.24v2.96a.55.55 0 01-1.1 0V8.54a.55.55 0 01.44-.54.55.55 0 01.52.26l2.38 3.24V8.54a.55.55 0 011.1 0v4.18zm3.44-3.08a.55.55 0 010 1.1h-1.79v1.08h1.79a.55.55 0 010 1.1h-2.34a.55.55 0 01-.55-.55V8.54a.55.55 0 01.55-.55h2.34a.55.55 0 010 1.1h-1.79v1.01h1.79a.55.55 0 010 .54z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.01 6.95 7.12 7.93.28.06.66.18.76.42.09.22.06.56.03.78l-.12.73c-.04.22-.16.86.75.47s5.02-2.96 6.85-5.07C19.52 13.36 22 11.13 22 10.5 22 5.81 17.52 2 12 2z"/></svg>
       LINE相談
     </a>
   </div>
